@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let match= +prompt("nhập điểm môn Toán:");
+        let physic= +prompt("nhập điểm môn Lý:");
+        let chemistry= +prompt("nhập điểm môn Hoá:")
+        let literature= +prompt("nhập điểm môn Văn:")
+        let history= +prompt("nhập điểm môn Sử:")
+        let geography= +prompt("nhập điểm môn Địa:")
+        let medium= (match+physic+chemistry+literature+history+geography)/6;
+        if (medium>=8.0 && medium <=10) {
+            console.log("xếp loại Giỏi");
+        }else if (medium>=6.5 & medium<=7.9) {
+            console.log("xếp loại Khá");
+        }else if (medium>=5.0 && medium<=6.4) {
+            console.log("xếp loại Trung Bình");
+        }else if (medium<5.0) {
+            console.log("xếp loại Yếu");
+        }
+    </script>
+</body>
+</html>
